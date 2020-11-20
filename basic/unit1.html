@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS를 넣는 첫번째 -->
+    <style>
+      /* 
+        HTML의 부모자식 관계
+        style 값 상속 받음
+        em : 상속 받은 값의 배수
+         */
+      /* p태그의 너비 지정 : px, %, em, rem, vw, vh*/
+      body {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 1.5em; /* 16*1.5 px */
+      }
+      h2 {
+        font-size: 1.2em; /* 16*1.2 px */
+      }
+      p {
+        /* width: 800px; 고정 값 */
+        width: 80%; /*화면의 80%만*/
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>길이</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni expedita
+      ducimus explicabo asperiores ullam amet reiciendis, dolorem doloremque at
+      quod sunt quos possimus autem rem sit harum! Qui, earum excepturi?
+    </p>
+  </body>
+</html>

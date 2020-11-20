@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS를 넣는 첫번째 -->
+    <style>
+      /* 
+        HTML의 부모자식 관계
+        style 값 상속 받음
+        em(element) : 상속 받은 값의 배수 (relative)
+        rem(root element) : 문서 기본값의 배수 (relative)
+         */
+      :root {
+        font-size: 12px; /* default : 16 -> 12 px */
+      }
+      /* p태그의 너비 지정 : px, %, em, rem, vw, vh*/
+      body {
+        /* font-size: 16px; */
+        /* default size : 16px */
+      }
+      h1 {
+        font-size: 1.5em; /* 16*1.5 px */
+        /* font-size: 1.5rem; */
+      }
+      h2 {
+        font-size: 1.2em; /* 16*1.2 px */
+        /* font-size: 1.2rem; */
+      }
+      span {
+        /* 상속 관계 : p>span */
+        font-size: 0.8em; /* 16(p-font-size)*0.8 px */
+        /* font-size: 0.8rem; */
+      }
+      p {
+        width: 80%; /*화면의 80%만*/
+        font-size: 1em;
+        /* font-size: 1rem; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 기본 문법</h1>
+    <h2>길이</h2>
+    <p>
+      <span>Lorem ipsum dolor</span> sit amet consectetur adipisicing elit.
+      Magni expedita ducimus explicabo asperiores ullam amet reiciendis, dolorem
+      doloremque at quod sunt quos possimus autem rem sit harum! Qui, earum
+      excepturi?
+    </p>
+  </body>
+</html>
+<!-- 중요 포인트 : html 상속 관계 -->
