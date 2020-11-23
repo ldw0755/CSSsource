@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float3</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+      .box {
+        background-color: white;
+        /* height: 50px; */
+        /* overflow: hidden; */
+      }
+      .left {
+        /* 
+            float으로 처리한 자식 태그 : 집나간 자식
+            부모 범위가 float개체에 맞춰지지 않음    
+        */
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .clearfix {
+        /* 주로 자주 쓰는 클래스명 */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="../img/left-arrow.png" alt="" class="left" />
+      <img src="../img/right-arrow.png" alt="" class="right" />
+      <div class="clearfix">Awesome!!</div>
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
+        voluptate saepe necessitatibus vitae, molestias nemo voluptates ducimus
+        quas est asperiores ipsum esse maxime, suscipit numquam? Cum maxime
+        aperiam molestias totam magnam nam voluptate deleniti itaque iusto atque
+        quidem possimus magni assumenda quisquam, modi voluptas corrupti
+        asperiores unde ad est rerum ipsa dignissimos. Perspiciatis molestias
+        autem vero sequi iusto praesentium distinctio aspernatur quos voluptates
+        totam quisquam amet ea ipsam libero, iste impedit error, reprehenderit
+        nulla! Odio sint quae nisi ea voluptatum tempora eius minus fuga tempore
+        veritatis quasi impedit non earum consequatur alias, atque corporis
+        vero! Repellendus assumenda beatae non.
+      </p> -->
+    </div>
+  </body>
+</html>

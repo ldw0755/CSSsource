@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>in-line</title>
+    <style>
+      span {
+        /* 인라인 요소는 width, height가 아무 의미 없음 */
+        width: 100px;
+        height: 100px;
+        display: block; /* like 블록요소 */
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 줄 바꿈 X -->
+    <span>이것은 인라인 요소입니다.</span>
+    <span>이것은 인라인 요소입니다.</span>
+    <span>이것은 인라인 요소입니다.</span>
+    <span>이것은 인라인 요소입니다.</span>
+    <!-- a tag : in-line 요소 -->
+    <a href="">link1</a>
+    <a href="">link2</a>
+    <a href="">link3</a>
+  </body>
+</html>
+<!-- 블럭 요소와 차이점
+    블럭 요소 : fixed size + no contents = 범위 표시 O
+    인사인 요소 : fixed size + no contents = 범위 표시 X -->

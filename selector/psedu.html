@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psedu.html</title>
+    <style>
+      /* a tag에 대한 가상 클래스 */
+      a:link {
+        /* link : 자동으로 붙어있는 클래스명 = 가상 클래스*/
+        text-decoration: none;
+        color: navy;
+        outline: none;
+        /* a tag : focus 시(tab으로 선택) outline : none; = 테두리 없음*/
+      }
+      a:hover {
+        /* hover : 가상 클래스 : 마우스 올렸을 때 동작 */
+        color: orange;
+      }
+      a:active {
+        /* active : 가상 클래스 : 눌렀을 때 동작 */
+        background-color: red;
+        color: white;
+      }
+      a:visited {
+        /* visited : 가상 클래스 :한번 방문한 링크에 대한 동작 */
+        color: silver;
+      }
+      h1:hover {
+        /* a tag 뿐 아니라 다양한 태그에서 사용 가능 */
+        text-decoration: underline;
+      }
+      input {
+        width: 150px;
+        outline: none;
+        border: 1px solid lightgray;
+        transition: 0.4s; /* 약간의 애니메이션 효과 */
+        padding: 5px 10px;
+      }
+      input:focus {
+        /* 대화형 컨탠츠, tab index 구현된 애들한테 사용 가능 */
+        width: 200px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>기본문법</h1>
+    <h2>가상 클래스 선택자</h2>
+    <ul>
+      <li><a href="" target="_blank">11st</a></li>
+      <li><a href="" target="_blank">gmarket</a></li>
+      <li><a href="" target="_blank">danawa</a></li>
+    </ul>
+    <a href="mainto:master@gmail.com">master@gmail.com</a>
+    <input type="text" />
+  </body>
+</html>

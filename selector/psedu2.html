@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        transition: 0.4s;
+      }
+      .box:hover {
+        /* 마우스를 올리면 액션 발생 */
+        width: 300px;
+        background-color: lime;
+      }
+      .box:active {
+        /* 누르고 있으면 액션 발생 */
+        width: 200px;
+        background-color: lightsalmon;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

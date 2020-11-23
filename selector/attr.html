@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [target] {
+        /* a tag : 밑줄 -> 밑줄 삭제 */
+        text-decoration: none;
+      }
+      [target="_blank"] {
+        background-color: blue;
+        color: #fff;
+      }
+      [target="_self"] {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 속성 선택자</h1>
+    <ul>
+      <li><a href="#" target="_blank">google</a></li>
+      <li><a href="#" target="_blank">daum</a></li>
+      <li><a href="#" target="_self">naver</a></li>
+    </ul>
+    <a href="mailto:master@google.com">master@google.com</a>
+  </body>
+</html>
