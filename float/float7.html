@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .portfolio {
+        width: 960px;
+        margin: 100px auto;
+        background-color: black;
+      }
+      .portfolio li {
+        float: left;
+        width: 225px;
+        height: 225px;
+        background-color: cadetblue;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        list-style-type: none;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: left;
+      }
+      .portfolio li:last-child {
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="portfolio clearfix">
+      <div>
+        <li>pic1</li>
+        <li>pic2</li>
+        <li>pic3</li>
+        <li>pic4</li>
+      </div>
+      <div>
+        <li>pic1</li>
+        <li>pic2</li>
+        <li>pic3</li>
+        <li>pic4</li>
+      </div>
+      <div>
+        <li>pic1</li>
+        <li>pic2</li>
+        <li>pic3</li>
+        <li>pic4</li>
+      </div>
+    </ul>
+  </body>
+</html>

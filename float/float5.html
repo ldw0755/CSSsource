@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float5</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* float 사용으로 인한 문제 해결 */
+      /* 부모태그에 overflow hidden */
+      .content {
+        background-color: skyblue;
+        /* overflow: hidden; */
+      }
+      .content div {
+        float: left;
+        margin-right: 10px;
+        margin-left: 10px;
+        border: 2px solid;
+      }
+      img {
+        /* 이미지 밑에 작게 뜬 공간 해결 */
+        vertical-align: top;
+      }
+      /* float 사용으로 인한 문제 해결 */
+      /* 요즘 많이 쓰는 방법 : clearfix 클래스 -> 아래와 같이 설정 */
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>float 속성을 이용한 이미지 배치</h1>
+    <div class="content clearfix">
+      <div><img src="http://placehold.it/100" alt="" /></div>
+      <div><img src="http://placehold.it/100" alt="" /></div>
+      <div><img src="http://placehold.it/100" alt="" /></div>
+    </div>
+    <div>
+      <h2>float 속성 해지</h2>
+    </div>
+  </body>
+</html>

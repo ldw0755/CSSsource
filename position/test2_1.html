@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test2</title>
+    <style>
+      .food-slide {
+        border: 2px solid green;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      .food-slide img {
+        width: 500px;
+        float: left;
+      }
+      .controls a {
+        display: block;
+        background-color: #333;
+        line-height: 50px;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        white-space: nowrap; /* 공백을 기준으로 enter 넣지 말기 */
+        top: calc(50% - 25px);
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img
+        src="https://dimg.donga.com/a/500/0/90/5/ugc/CDB/29STREET/Article/5e/b2/04/e8/5eb204e81752d2738236.jpg"
+        alt=""
+      />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ea
+        maxime ex neque, blanditiis aperiam, harum eligendi illo saepe nisi
+        explicabo. Officia ad eum necessitatibus asperiores temporibus! Ad, a
+        tempore?
+      </p>
+      <div class="controls">
+        <a href="" class="prev">Previout Project</a>
+        <a href="" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>

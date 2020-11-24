@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>relative-position</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        vertical-align: top;
+      }
+      .box {
+        border: 1px solid;
+        padding: 10px;
+        /* 원래 자기 자신 위치 기준 */
+        position: relative;
+      }
+      .a {
+        background-color: blue;
+        top: 50px;
+        left: 50px;
+      }
+      .b {
+        background-color: red;
+        top: 50px;
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box a"><img src="http://placehold.it/100x120" alt="" /></div>
+    <div class="box b"><img src="http://placehold.it/100x120" alt="" /></div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis,
+      repudiandae illo. Saepe libero minima rem mollitia magni dolorum aliquid
+      impedit iste vitae ea, voluptate quis hic laudantium dolorem ullam alias!
+    </p>
+  </body>
+</html>
